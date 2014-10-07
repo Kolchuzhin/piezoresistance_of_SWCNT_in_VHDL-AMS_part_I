@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
--- Model: constant voltage source
+-- Model: dc voltage source
 --
 -- Author: Vladimir Kolchuzhin, LMGT, TU Chemnitz
 -- <vladimir.kolchuzhin@etit.tu-chemnitz.de>
