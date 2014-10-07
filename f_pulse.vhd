@@ -11,7 +11,7 @@
 -- ver. 1.0 
 -- status: 1T OK
 -------------------------------------------------------------------------------
--- pulse parameters
+-- pulse parameters:
 -- VL low
 -- VH high
 -- TD delay time
