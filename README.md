@@ -3,10 +3,14 @@ Piezoresistance_of_SWCNT_in_VHDL-AMS_part_I
 
 Piezoresistance  of Single Walled Carbon Nanotube in VHDL-AMS, Part I  Analytical Based Models:
 
-testbench_pr_swcnt.vhd,
+1) VHDL-AMS model in hAMSter
+  testbench_pr_swcnt.vhd,
   pr_swcnt.vhd,
   v_dc.vhd,
   f_pulse.vhd
+  
+2) MATLAB model for verification
+  SWCNT_bandgap.m
   
   
   This is a work in progress...
