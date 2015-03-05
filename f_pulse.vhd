@@ -9,7 +9,7 @@
 -------------------------------------------------------------------------------
 -- ID: f_pulse.vhd
 -- ver. 1.0 
--- status: 1T OK
+-- status: 1T triangular pulse OK
 -------------------------------------------------------------------------------
 -- pulse parameters:
 -- VL low
@@ -33,7 +33,7 @@ entity f_pulse is
 end entity f_pulse;
 
 
-architecture behav of f_pulse is
+architecture basic of f_pulse is
   quantity u across f through p to n;
 
 begin
@@ -48,5 +48,5 @@ begin
 	f == 0.0;
  end use;
 
-end architecture behav;
+end architecture basic;
 -------------------------------------------------------------------------------
