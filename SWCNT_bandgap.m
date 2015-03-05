@@ -5,7 +5,7 @@ function [R, Eg]=SWCNT_bandgap(n,m, epsilon,gamma)
 % INPUT:    
 %           n,m are the chiral indices
 %           epsilon is the axial strain
-%           gammais is the torsional strain
+%           gamma is the torsional strain
 %
 % OUTPUT:
 %           R  is the resistance of a strained SWCNT in Ohm
@@ -106,16 +106,16 @@ p = p - 3*(p>1);
  % theta=0;  % zigzag   m=0 (n,0)
  % theta=30; % armchair n=m (n,n)
 %=========================================================================%
-if n~=m 
-    if abs(p)==1        % semiconducting abs(p)=1
-        Eg0=t0*a/sqrt(3)/r0;
-        dEg=sign(2*p+1)*3*t0*((1+nu)*epsilon*cos(3*theta)+gamma*sin(3*theta));
-        Eg=abs(Eg0+dEg);
-    end
+if n~=m
     if p==0             % semimetallic p=0
         Eg0=t0*a^2/(16*r0^2)*cos(3*theta);           % zero strain bandgap
         dE=-(sqrt(3)/2*a*b*cos(3*theta).*epsilon);   % change of bandgap
         Eg=abs(Eg0+dE);
+    end
+    if abs(p)==1        % semiconducting abs(p)=1
+        Eg0=t0*a/sqrt(3)/r0;
+        dEg=sign(2*p+1)*3*t0*((1+nu)*epsilon*cos(3*theta)+gamma*sin(3*theta));
+        Eg=abs(Eg0+dEg);
     end
 else                    % metallic: n=m
         Eg=0.0;
