@@ -6,16 +6,16 @@
 -- Date: 06.01.2012
 --
 -- Library: 	
---			    pr_swcnt.vhd (cnt.vhd)
+--			    pr_swcnt.vhd
 --             v_dc.vhd
 --          f_pulse.vhd 
 -- 
 --
--- Euler solver, Tend=2.0m, dt=1u (Tend=2.5m, dt=1u)
+-- Euler solver, Tend=2.0m, dt=1u
 -- Output: u_ext1; cnt: i.cnt1, strain.cnt1, rcnt.cnt1;
 -- The CNT is driven by a force source Fs1
 -------------------------------------------------------------------------------
--- ID: testbench_cnt.vhd
+-- ID: testbench_pr_swcnt.vhd
 --
 -- Modification History:
 -- Revision 1.0  12.04.2012 official release for ForGr1713, www.zfm.tu-chemnitz.de/for1713
@@ -28,11 +28,11 @@ use work.all;
 use ieee.math_real.all;
 
 
-entity testbench_cnt is
+entity testbench_pr_swcnt is
 end;
 
 
-architecture behav of testbench_cnt is
+architecture behav of testbench_pr_swcnt is
   terminal struc1_ext,struc2_ext: translational;      -- structural nodes
   terminal elec1_ext,elec2_ext: electrical;           -- electrical ports
   --
@@ -73,16 +73,16 @@ u_ext2==0.0;   -- external nodal displacement (ground)
 --                       
 --     nodal ports          electrical ports
 --
--- f_ext1=0 ->>- o---o      o---o -<<- i_ext1=0
+-- f_ext1=0 ->>- o----      ----o -<<- i_ext1=0
 --               |   |      |   |
 --               |   <      -   |
 --               ^   <     | |  |
 --           Fs1 ^   <     | |  ^ Vs1
 --               |   <      -   |
 --               |   |      |   |
---      u_ext2=0 o---o      o---o v_ext2=0 
+--      u_ext2=0 o----      ----o v_ext2=0 
 --
---                                             electrical_ground
+--                                electrical_ground
 --
 -- ASCII-Schematic of the circuit
 -------------------------------------------------------------------------------
