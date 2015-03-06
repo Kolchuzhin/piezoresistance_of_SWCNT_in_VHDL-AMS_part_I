@@ -109,8 +109,8 @@ p = p - 3*(p>1);
 if n~=m
     if p==0             % semimetallic p=0
         Eg0=t0*a^2/(16*r0^2)*cos(3*theta);           % zero strain bandgap
-        dE=-(sqrt(3)/2*a*b*cos(3*theta).*epsilon);   % change of bandgap
-        Eg=abs(Eg0+dE);
+        dEg=-(sqrt(3)/2*a*b*cos(3*theta).*epsilon);   % change of bandgap
+        Eg=abs(Eg0+dEg);
     end
     if abs(p)==1        % semiconducting abs(p)=1
         Eg0=t0*a/sqrt(3)/r0;
