@@ -11,3 +11,8 @@ Piezoresistance  of Single Walled Carbon Nanotube in VHDL-AMS, Part I. Analytica
   
 2) MATLAB model for verification:
   SWCNT_bandgap.m
+
+Tutorial:
+  Kolchuzhin, Vladimir et al.. (2015). Piezoresistance of Single Walled Carbon Nanotube in VHDL-AMS. Zenodo. 10.5281/zenodo.15923
+ 
+ http://dx.doi.org/10.5281/zenodo.15923
