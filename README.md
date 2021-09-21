@@ -16,9 +16,9 @@ Piezoresistance  of Single Walled Carbon Nanotube in VHDL-AMS, Part I. Analytica
 
 Tutorial:
 ---------
-Kolchuzhin, Vladimir et al.. (2015). Piezoresistance of Single Walled Carbon Nanotube in VHDL-AMS. Zenodo. 10.5281/zenodo.15923
+Kolchuzhin, V., Markert, E., & Wagner, C. (2015, March 9). Piezoresistance of Single Walled Carbon Nanotube in VHDL-AMS. Zenodo. 10.5281/zenodo.15923
  
-http://dx.doi.org/10.5281/zenodo.15923
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15923.svg)](https://doi.org/10.5281/zenodo.15923)
 
 Web-based simulation:
 ---------------------
