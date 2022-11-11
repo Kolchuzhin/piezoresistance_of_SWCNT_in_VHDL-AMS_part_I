@@ -1,7 +1,12 @@
 Piezoresistance_of_SWCNT_in_VHDL-AMS_part_I
 ===========================================
 
-Piezoresistance  of Single Walled Carbon Nanotube in VHDL-AMS, Part I. Analytical Based Models
+| [symbol](https://github.com/Kolchuzhin/piezoresistance_of_SWCNT_in_VHDL-AMS_part_I/tree/master/symbol) | [SWCNT](https://github.com/Kolchuzhin/openMEMSdesign/blob/master/pressure_sensor.svg) | 
+|:------------------:|:------------------:|
+| ![symbol](https://github.com/Kolchuzhin/piezoresistance_of_SWCNT_in_VHDL-AMS_part_I/blob/master/symbol/SWCNT.svg) | ![SWCNT](https://github.com/Kolchuzhin/piezoresistance_of_SWCNT_in_VHDL-AMS_part_I/blob/master/SWCNT.png) |
+
+Piezoresistance  of Single Walled Carbon Nanotube in VHDL-AMS, Part I. Analytical Based Models:
+-----------------------------------------------------------------------------------------------
 
 1) VHDL-AMS model in hAMSter:
    * testbench_pr_swcnt.vhd
@@ -13,6 +18,11 @@ Piezoresistance  of Single Walled Carbon Nanotube in VHDL-AMS, Part I. Analytica
    * SWCNT_bandgap.m
    
 3) SystemC_AMS model
+   * cnt_model.h
+   * top_level.cpp
+   * tri_scr.h
+   * tri_wave.cpp
+   
 
 Tutorial:
 ---------
@@ -22,4 +32,7 @@ Kolchuzhin, V., Markert, E., & Wagner, C. (2015, March 9). Piezoresistance of Si
 
 Web-based simulation:
 ---------------------
+<!--
 https://www.systemvision.com/groups/vladimirs-workspace/designs/piezoresistance-single-walled-carbon-nanotube
+-->
+https://explore.partquest.com/node/317337
